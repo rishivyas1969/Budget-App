@@ -126,7 +126,7 @@ var UIController = (function() {
         displayDate: function(){
             var month, year, date ;
             now = new Date() ;
-            months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "Octumber", "November", "December"] ;
+            months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"] ;
             month = now.getMonth() ;
             year = now.getFullYear() ;
             document.querySelector(DOM.dateLabel).textContent = now.getDay() + " " + months[month] + " " + year ;
