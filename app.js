@@ -4,7 +4,7 @@ var UIController = (function() {
 
     var DOM = {
         inputType: ".add__type",
-        inputDescription: ".add__description",
+        inputDesc: ".add__description",
         inputValue: ".add__value",
         inputBtn: ".add__btn",
         incomeContainer: ".income__list",
@@ -49,7 +49,7 @@ var UIController = (function() {
 
             return {
                 type : document.querySelector(DOM.inputType).value, // return "inc" or "exp"
-                description : document.querySelector(DOM.inputDescription).value,
+                description : document.querySelector(DOM.inputDesc).value,
                 value : parseFloat(document.querySelector(DOM.inputValue).value)
             }   
         },
@@ -81,7 +81,7 @@ var UIController = (function() {
         },
         clearFields: function() {
             var fields ;
-            fields = document.querySelectorAll(DOM.inputDescription  + ", " + DOM.inputValue) ;
+            fields = document.querySelectorAll(DOM.inputDesc  + ", " + DOM.inputValue) ;
 
             fieldsArr = Array.prototype.slice.call(fields) ;
 
@@ -134,7 +134,7 @@ var UIController = (function() {
         changedType: function() {
             var fields = document.querySelectorAll(
                 DOM.inputType + ", " +
-                DOM.inputDescription + ", " +
+                DOM.inputDesc + ", " +
                 DOM.inputValue
             ) ;
 
